@@ -12,4 +12,9 @@ font-family: 'Ubuntu', sans-serif;
 
 body {
   @apply bg-primaryLightBlack text-primaryWhite;
+  font-family: "Ubuntu", sans-serif;
+}
+
+button {
+  font-family: "Space Grotesk", sans-serif;
 }

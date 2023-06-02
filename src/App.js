@@ -9,6 +9,9 @@ import { Services } from "./components/Services";
 
 import HeroImg from "./assets/hero.jpg";
 import ServicesImg from "./assets/services.jpg";
+import ProjectsImg from "./assets/projects.jpg";
+import AboutMeImg from "./assets/about-me.jpg";
+import FooterImg from "./assets/footer.jpg";
 
 function App() {
   return (
@@ -16,6 +19,9 @@ function App() {
       <div className="absolute -z-10 opacity-5 w-full top-0">
         <img src={HeroImg} className="block w-[100%]" alt="" />
         <img src={ServicesImg} className=" block w-[100%]" alt="" />
+        <img src={ProjectsImg} className=" block w-[100%]" alt="" />
+        <img src={AboutMeImg} className=" block w-[100%]" alt="" />
+        <img src={FooterImg} className=" block w-[100%]" alt="" />
       </div>
       <main className="max-w-app m-auto">
         <Header />
