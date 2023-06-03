@@ -1,11 +1,45 @@
 import React from "react";
 import { Button } from "../utils/Button";
 
+const servicesList = [
+  {
+    name: "User Research",
+    image: require("../assets/strategy.png"),
+    describtion: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
+          doloribus adipisci. Nisi facere veritatis explicabo at, sunt fuga
+          voluptate quod iure, ipsam ipsa amet.`,
+  },
+  {
+    name: "Brand Design",
+    image: require("../assets/app-development.png"),
+    describtion: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
+          doloribus adipisci. Nisi facere veritatis explicabo at, sunt fuga
+          voluptate quod iure, ipsam ipsa amet.`,
+  },
+  {
+    name: "App Design",
+    image: require("../assets/search.png"),
+    describtion: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
+          doloribus adipisci. Nisi facere veritatis explicabo at, sunt fuga
+          voluptate quod iure, ipsam ipsa amet.`,
+  },
+  {
+    name: "Web Design",
+    image: require("../assets/search.png"),
+    describtion: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
+          doloribus adipisci. Nisi facere veritatis explicabo at, sunt fuga
+          voluptate quod iure, ipsam ipsa amet.`,
+  },
+];
+
 export const Services = () => {
   return (
-    <section className="grid grid-cols-2 gap-20 mt-32">
-      <div className="max-w-xl">
-        <h2 className="text-5xl font-semibold">
+    <section
+      id="services"
+      className=" services grid grid-cols-2 gap-20 lg:grid-cols-1 lg:gap-10  mt-32"
+    >
+      <div className="max-w-xl lg:grid lg:m-auto lg:text-center ">
+        <h2 className="text-5xl font-semibold sm:text-4xl">
           The Service I offer is specifically designed to meet your needs.
         </h2>
         <p className="py-6">
@@ -15,26 +49,26 @@ export const Services = () => {
           inventore ab totam impedit suscipit nulla natus alias? Voluptates
           doloribus qui harum!
         </p>
-        <Button text={"More Details"} />
+        <Button text={"More Details"} isLink={true} styles={"lg:self-left"} />
       </div>
-      <div className="grid gap-28 pt-8">
-        {[1, 2, 3, 4, 5, 6].map((item, index) => {
+
+      <div className="grid gap-10 ">
+        {servicesList.map((item, index) => {
           return (
-            <div key={index} className="flex gap-4">
+            <div
+              key={index}
+              className="flex gap-6 bg-primaryBlack rounded-lg p-8"
+            >
               <div>
                 <img
-                  srcSet={require("../assets/strategy.png")}
-                  className="w-24"
+                  srcSet={item.image}
+                  className="w-32 aspect-square"
                   alt="Search"
                 />
               </div>
               <div>
-                <h4 className="text-xl font-bold">User Research</h4>
-                <p className="pt-3 text-lg">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Similique deserunt eveniet aut animi a velit! Quia hic id
-                  veniam vero.
-                </p>
+                <h4 className="text-xl font-bold">{item.name}</h4>
+                <p className="pt-3 text-lg">{item.describtion}</p>
               </div>
             </div>
           );
