@@ -6,13 +6,13 @@ export const Hero = () => {
     <section
       data-aos="flip-up"
       id="home"
-      className=" bg-primaryOrange h-[685px] rounded-2xl grid justify-center items-center relative "
+      className=" bg-primaryOrange h-[685px] rounded-2xl grid -z-10 justify-center mt-24 items-center relative "
     >
       <div className="flex gap-8 text-center flex-col max-w-4xl m-auto">
-        <h1 className="font-semibold text-6xl sm:text-base lg:text-5xl ">
+        <h1 className="font-semibold text-6xl sm:!text-3xl sm:px-2 lg:text-5xl  ">
           Hello! I'm Abdulaziz, <br />a Front-end Developer
         </h1>
-        <p className="text-xl lg:text-lg px-10 font-semibold md:font-normal">
+        <p className="text-xl lg:text-lg px-10 sm:px-4 font-semibold md:font-normal">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
           fuga ducimus quis natus blanditiis necessitatibus saepe sint tempore
           repellat voluptatibus.
