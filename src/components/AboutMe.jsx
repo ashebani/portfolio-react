@@ -3,7 +3,10 @@ import { Button } from "../utils/Button";
 
 export const AboutMe = () => {
   return (
-    <article id="experience" className="flex mt-60 gap-20 lg:flex-col ">
+    <article
+      id="experience"
+      className="flex mt-40 lg:mt-80 gap-20 lg:flex-col "
+    >
       <div className="flex-1 flex items-center justify-center relative">
         {/* <img
           srcSet={require("../assets/57.png")}
@@ -12,7 +15,7 @@ export const AboutMe = () => {
         /> */}
         <img
           srcSet={require("../assets/blob.svg").default}
-          className="absolute -z-10"
+          className="absolute lg:-top-56 -z-10 lg:w-80 "
           alt=""
         />
       </div>

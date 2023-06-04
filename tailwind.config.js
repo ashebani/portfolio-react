@@ -12,6 +12,7 @@ module.exports = {
         secondaryRed: "#FB7157",
         secondaryYellow: "#E6D063",
         secondaryBlue: "#4D83F0",
+        primaryGray: "#919191",
       },
       maxWidth: {
         app: "1320px",

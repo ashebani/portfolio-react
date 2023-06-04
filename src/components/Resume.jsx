@@ -5,14 +5,14 @@ export const Resume = () => {
   return (
     <section
       id="hire-me"
-      className="  relative bg-primaryBlack h-[620px] rounded-2xl  grid justify-center items-center mt-24"
+      className="  relative bg-primaryBlack py-40 rounded-2xl grid justify-center items-center lg:mt-20 sm:mt-10"
     >
       <div className="flex gap-8 text-center flex-col max-w-4xl m-auto">
-        <h1 className="text-6xl lg:text-5xl font-semibold leading-tight ">
+        <h1 className="text-6xl lg:text-5xl sm:!text-4xl font-semibold leading-tight ">
           Got a project in mind? <br />
           Let's work it together!
         </h1>
-        <p className="text-xl px-8 lg:text-lg lg:px-10 font-semibold leading-loose">
+        <p className="text-xl px-8 lg:text-lg lg:px-10 sm:font-normal leading-loose">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
           fuga ducimus quis natus blanditiis necessitatibus saepe sint tempore
           repellat voluptatibus.
