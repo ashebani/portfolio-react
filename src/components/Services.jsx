@@ -4,28 +4,28 @@ import { Button } from "../utils/Button";
 const servicesList = [
   {
     name: "User Research",
-    image: require("../assets/strategy.png"),
+    image: require("../assets/design-3.svg").default,
     describtion: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
           doloribus adipisci. Nisi facere veritatis explicabo at, sunt fuga
           voluptate quod iure, ipsam ipsa amet.`,
   },
   {
     name: "Brand Design",
-    image: require("../assets/app-development.png"),
+    image: require("../assets/design-2.svg").default,
     describtion: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
           doloribus adipisci. Nisi facere veritatis explicabo at, sunt fuga
           voluptate quod iure, ipsam ipsa amet.`,
   },
   {
     name: "App Design",
-    image: require("../assets/search.png"),
+    image: require("../assets/design-1.svg").default,
     describtion: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
           doloribus adipisci. Nisi facere veritatis explicabo at, sunt fuga
           voluptate quod iure, ipsam ipsa amet.`,
   },
   {
     name: "Web Design",
-    image: require("../assets/search.png"),
+    image: require("../assets/design-4.svg").default,
     describtion: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
           doloribus adipisci. Nisi facere veritatis explicabo at, sunt fuga
           voluptate quod iure, ipsam ipsa amet.`,

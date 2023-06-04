@@ -8,7 +8,15 @@ export const Button = ({ text, styles, children, isLink = false }) => {
   px-8 ${styles}`}
     >
       {text}
-      {isLink ? <img srcSet={arrow} className="h-6 pl-3" alt="" /> : ""}
+      {isLink ? (
+        <img
+          srcSet={arrow}
+          className="h-6 pl-3 hover:filter hover:invert-100 hover:sepia-0 hover:saturate-7500 hover:hue-rotate-93 hover:brightness-102 hover:contrast-105"
+          alt=""
+        />
+      ) : (
+        ""
+      )}
     </button>
   );
 };

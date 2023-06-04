@@ -4,20 +4,23 @@ import { Button } from "../utils/Button";
 export const AboutMe = () => {
   return (
     <article
+      data-aos="fade-up"
       id="experience"
-      className="flex mt-40 lg:mt-80 gap-20 lg:flex-col "
+      className="flex mt-40 lg:mt-20 gap-20 md:gap-6 lg:flex-col "
     >
       <div className="flex-1 flex items-center justify-center relative">
+        <div className="background_image bg-[length:450px] md:bg-[length:350px]">
+          <img
+            srcSet={require("../assets/5898988-01.png")}
+            className="w-[400px] md:w-[300px] "
+            alt="avatar"
+          />
+        </div>
         {/* <img
-          srcSet={require("../assets/57.png")}
-          className="w-72 "
-          alt="avatar"
-        /> */}
-        <img
           srcSet={require("../assets/blob.svg").default}
           className="absolute lg:-top-56 -z-10 lg:w-80 "
           alt=""
-        />
+        /> */}
       </div>
 
       <section className="flex-1 lg:text-center">

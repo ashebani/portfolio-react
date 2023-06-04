@@ -18,10 +18,9 @@ export const Projects = () => {
       {/* Green */}
       <section
         data-aos="fade-right"
-        className="grid grid-cols-2 mt-20 sm:grid-cols-1 sm:gap-6 items-center"
+        className="grid grid-cols-2 mt-20 lg:mt-20 sm:grid-cols-1 sm:gap-6 items-center"
       >
-        {/* TODO: Fix right padding issue */}
-        <div className="flex-[1px] flex flex-col justify-center p-20 sm:p-0 lg:px-10 sm:text-center">
+        <div className="flex-[1px] flex flex-col justify-center p-20 lg:p-0 lg:px-10 sm:text-center">
           <h4 className="text-secondaryGreen font-bold pb-4 font-sans">
             Web Developement
           </h4>
@@ -49,7 +48,7 @@ export const Projects = () => {
       {/* Red */}
       <section
         data-aos="fade-left"
-        className="grid grid-cols-2 mt-20 sm:grid-cols-1 sm:gap-6 sm:flex sm:flex-col-reverse items-center "
+        className="grid grid-cols-2 mt-10 lg:mt-10 md:!mt-20 sm:grid-cols-1 sm:gap-6 sm:flex sm:flex-col-reverse items-center "
       >
         <div className="flex-1">
           <img
@@ -58,7 +57,7 @@ export const Projects = () => {
             alt=""
           />
         </div>
-        <div className="flex-[1px] flex flex-col justify-center p-20 sm:p-0 lg:px-10 sm:text-center">
+        <div className="flex-[1px] flex flex-col justify-center p-20 lg:p-0 lg:px-10 sm:text-center">
           <h4 className="text-secondaryRed font-bold pb-4 font-sans">
             Web Developement
           </h4>
@@ -78,7 +77,7 @@ export const Projects = () => {
 
       <section className="flex gap-28 lg:gap-14 lg:text-center sm:grid">
         {/* Blue */}
-        <div className="flex-1 ">
+        <div className="flex-1 " data-aos="fade-right">
           <div className="flex-1 flex flex-col justify-center pt-20 pb-10 m-auto ">
             <h4 className="text-secondaryBlue font-bold pb-4 font-sans">
               Web Developement
@@ -109,7 +108,7 @@ export const Projects = () => {
         </div>
 
         {/* Yellow */}
-        <div className="flex-1 ">
+        <div className="flex-1 " data-aos="fade-left">
           <div className="flex-1 flex flex-col justify-center pt-20 sm:pt-10 pb-10  m-auto  ">
             <h4 className="text-secondaryYellow font-bold pb-4 font-sans">
               Web Developement

@@ -5,7 +5,10 @@ export const Footer = () => {
     <footer className="flex justify-between my-10">
       <p className="">
         Designed by{" "}
-        <a className="font-bold" href="https://www.behance.net/fewtone">
+        <a
+          className="font-bold hover:scale-125 ease-in"
+          href="https://www.behance.net/fewtone"
+        >
           FewTone
         </a>
       </p>

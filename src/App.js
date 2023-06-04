@@ -13,13 +13,16 @@ import { useEffect } from "react";
 
 function App() {
   useEffect(() => {
-    Aos.init();
+    Aos.init({
+      duration: 300,
+      easing: "ease-in-out",
+    });
     Aos.refresh();
   }, []);
 
   return (
     <>
-      <main className="m-auto px-20 md:px-8 xs:!px-6 max-w-[1444px]">
+      <main className="m-auto px-20 md:px-8 xs:!px-6 max-w-[1444px] overflow-x-hidden">
         <Header />
         <Hero />
         <Services />
