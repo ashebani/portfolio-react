@@ -17,7 +17,7 @@ export const Hero = () => {
           fuga ducimus quis natus blanditiis necessitatibus saepe sint tempore
           repellat voluptatibus.
         </p>
-        <Button text="See My Work" styles={"self-center"} isLink={true} />
+        <Button text="See My Work" styles={"self-center z-20"} isLink={true} />
       </div>
       <img
         src={require("../assets/Untitled-1-02.svg").default}
