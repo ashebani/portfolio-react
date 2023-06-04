@@ -11,7 +11,7 @@ export const Hero = () => {
         <h1 className="font-semibold text-6xl sm:text-base lg:text-5xl ">
           Hello! I'm Abdulaziz, <br />a Front-end Developer
         </h1>
-        <p className="text-xl lg:text-lg px-10 font-semibold">
+        <p className="text-xl lg:text-lg px-10 font-semibold md:font-normal">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
           fuga ducimus quis natus blanditiis necessitatibus saepe sint tempore
           repellat voluptatibus.
