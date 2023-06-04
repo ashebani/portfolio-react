@@ -4,6 +4,7 @@ import { Button } from "../utils/Button";
 export const Hero = () => {
   return (
     <section
+      data-aos="flip-up"
       id="home"
       className=" bg-primaryOrange h-[685px] rounded-2xl grid justify-center items-center relative "
     >

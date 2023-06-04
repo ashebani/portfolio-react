@@ -4,6 +4,7 @@ import { Button } from "../utils/Button";
 export const Resume = () => {
   return (
     <section
+      data-aos="flip-up"
       id="hire-me"
       className="  relative bg-primaryBlack py-40 rounded-2xl grid justify-center items-center lg:mt-20 sm:mt-10"
     >

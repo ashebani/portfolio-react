@@ -16,7 +16,10 @@ export const Projects = () => {
       </div>
 
       {/* Green */}
-      <section className="grid grid-cols-2 mt-20 sm:grid-cols-1 sm:gap-6 items-center">
+      <section
+        data-aos="fade-right"
+        className="grid grid-cols-2 mt-20 sm:grid-cols-1 sm:gap-6 items-center"
+      >
         {/* TODO: Fix right padding issue */}
         <div className="flex-[1px] flex flex-col justify-center p-20 sm:p-0 lg:px-10 sm:text-center">
           <h4 className="text-secondaryGreen font-bold pb-4 font-sans">
@@ -44,7 +47,10 @@ export const Projects = () => {
       </section>
 
       {/* Red */}
-      <section className="grid grid-cols-2 mt-20 sm:grid-cols-1 sm:gap-6 sm:flex sm:flex-col-reverse items-center ">
+      <section
+        data-aos="fade-left"
+        className="grid grid-cols-2 mt-20 sm:grid-cols-1 sm:gap-6 sm:flex sm:flex-col-reverse items-center "
+      >
         <div className="flex-1">
           <img
             className="rounded-md "

@@ -56,6 +56,7 @@ export const Services = () => {
         {servicesList.map((item, index) => {
           return (
             <div
+              data-aos="fade-right"
               key={index}
               className="flex gap-6 bg-primaryBlack rounded-lg p-8"
             >
