@@ -1,22 +1,20 @@
 import React from "react";
 import { Button } from "../utils/Button";
+import { resume } from "../utils/data";
 
 export const Resume = () => {
   return (
     <section
       data-aos="flip-up"
       id="hire-me"
-      className="  relative bg-primaryBlack py-40 rounded-2xl grid justify-center items-center lg:mt-20 sm:mt-10"
+      className="relative bg-primaryBlack py-40 rounded-2xl grid justify-center items-center lg:mt-20 sm:mt-10"
     >
       <div className="flex gap-8 text-center flex-col max-w-4xl m-auto">
-        <h1 className="text-6xl lg:text-5xl sm:!text-4xl font-semibold leading-tight ">
-          Got a project in mind? <br />
-          Let's work it together!
+        <h1 className="text-6xl lg:text-5xl sm:!text-4xl px-8 sm:px-4 font-semibold leading-tight ">
+          {resume.title}
         </h1>
         <p className="text-xl px-8 lg:text-lg lg:px-10 sm:font-normal leading-loose">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
-          fuga ducimus quis natus blanditiis necessitatibus saepe sint tempore
-          repellat voluptatibus.
+          {resume.description}
         </p>
         <Button text="See My Work" styles={"self-center"} isLink={true} />
       </div>

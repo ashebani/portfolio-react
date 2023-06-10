@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "../utils/Button";
-
+import { hero } from "../utils/data";
 export const Hero = () => {
   return (
     <section
@@ -10,12 +10,10 @@ export const Hero = () => {
     >
       <div className="flex gap-8 text-center flex-col max-w-4xl m-auto">
         <h1 className="font-semibold text-6xl sm:!text-3xl sm:px-2 lg:text-5xl  ">
-          Hello! I'm Abdulaziz, <br />a Front-end Developer
+          {hero.title}
         </h1>
-        <p className="text-xl lg:text-lg px-10 sm:px-4 font-semibold md:font-normal">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
-          fuga ducimus quis natus blanditiis necessitatibus saepe sint tempore
-          repellat voluptatibus.
+        <p className="text-xl lg:text-lg px-10 sm:px-4 font-normal">
+          {hero.description}
         </p>
         <Button text="See My Work" styles={"self-center z-20"} isLink={true} />
       </div>
