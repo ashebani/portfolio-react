@@ -6,27 +6,37 @@ export const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = React.useState(false);
   return (
     <nav className="flex transform fixed justify-between px-20 md:px-8 xs:!px-6 max-w-[1444px] z-20 m-auto py-7 top-0 left-0 right-0 rounded-b-md bg-primaryLightBlack">
-      <button className="text-2xl font-bold">A Portfolio</button>
+      <div className="flex gap-3 items-center">
+        <img
+          srcSet={require("../assets/circled-avatar.png")}
+          alt="avatar"
+          className="w-10 h-10"
+        />
+        <button className="text-2xl font-bold">A Portfolio</button>
+      </div>
+
+      {/* Desktop NavBar */}
       <ul className="flex gap-10 text-lg font-semibold items-center lg:hidden ">
-        <li>
+        <li className="hover:scale-110 ease-in-out transition duration-200 transform">
           <a href="#home">Home</a>
         </li>
-        <li>
+        <li className="hover:scale-110 transition duration-200 transform">
           <a href="#services">Services</a>
         </li>
-        <li>
+        <li className="hover:scale-110 transition duration-200 transform">
           <a href="#projects">Projects</a>
         </li>
-        <li>
+        <li className="hover:scale-110 transition duration-200 transform">
           <a href="#experience">Experience</a>
         </li>
-        <li>
+        <li className="hover:scale-110 transition duration-200 transform">
           <a href="#hire-me">Hire me</a>
         </li>
       </ul>
 
       <Button text="Contact Me" bgColor="hey" styles={"lg:hidden"} />
 
+      {/* Mobile NavBar */}
       {showMobileMenu ? (
         <div
           style={{

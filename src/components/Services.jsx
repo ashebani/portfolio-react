@@ -20,16 +20,13 @@ export const Services = () => {
             <div
               data-aos="fade-right"
               key={index}
-              className="flex gap-6 bg-primaryBlack rounded-lg p-8"
+              className="flex md:flex-col md:justify-center md:items-center gap-6 bg-primaryBlack rounded-lg p-8"
             >
-              <div>
-                <img
-                  srcSet={item.image}
-                  className="w-32 aspect-square"
-                  alt="Search"
-                />
+              <div className="flex-none  ">
+                <img srcSet={item.image} width="50px" alt="Search" />
               </div>
-              <div>
+
+              <div className="md:text-center">
                 <h4 className="text-xl font-bold">{item.name}</h4>
                 <p className="pt-3 text-lg">{item.describtion}</p>
               </div>

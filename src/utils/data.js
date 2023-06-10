@@ -1,45 +1,33 @@
 // Done
-
 export const hero = {
   title: `Hello! I'm Abdulaziz, a Front-end Developer`,
   description: `Welcome to my website! This website was created as a showcase of my portfolio in web development. As a passionate developer, I have always been fascinated by the endless possibilities that technology provides us.`,
 };
 
+// Done
 export const services = {
   title: "The Service I offer is specifically designed to meet your needs.",
-  description: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
-  doloribus adipisci. Nisi facere veritatis explicabo at, sunt fuga
-  voluptate quod iure, ipsam ipsa amet. Ratione, non earum accusantium
-  inventore ab totam impedit suscipit nulla natus alias? Voluptates
-  doloribus qui harum!`,
+  description: ``,
   servicesList: [
     {
-      name: "User Research",
+      name: "Social Media Management",
       image: require("../assets/design-3.svg").default,
-      describtion: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
-          doloribus adipisci. Nisi facere veritatis explicabo at, sunt fuga
-          voluptate quod iure, ipsam ipsa amet.`,
+      describtion: `It's always essential to have a strong social media presence, but managing all of your accounts can be overwhelming. Let me help! My experience in social media management can create and execute a comprehensive social media plan that will increase engagement, followers, and ultimately grow your business.`,
     },
     {
-      name: "Brand Design",
+      name: "Web Development",
       image: require("../assets/design-2.svg").default,
-      describtion: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
-          doloribus adipisci. Nisi facere veritatis explicabo at, sunt fuga
-          voluptate quod iure, ipsam ipsa amet.`,
-    },
-    {
-      name: "App Design",
-      image: require("../assets/design-1.svg").default,
-      describtion: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
-          doloribus adipisci. Nisi facere veritatis explicabo at, sunt fuga
-          voluptate quod iure, ipsam ipsa amet.`,
+      describtion: `Whether you need a simple brochure website or a complex web application, I've got you covered. I will work with you to bring your ideas to life using the latest technologies and platforms.`,
     },
     {
       name: "Web Design",
+      image: require("../assets/design-1.svg").default,
+      describtion: `I take pride in creating visually stunning websites that are tailored to meet your needs.`,
+    },
+    {
+      name: "Data Analysis",
       image: require("../assets/design-4.svg").default,
-      describtion: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
-          doloribus adipisci. Nisi facere veritatis explicabo at, sunt fuga
-          voluptate quod iure, ipsam ipsa amet.`,
+      describtion: `Your business generates a lot of data, but are you using it effectively? As a data analyst I can provide solutions that can help you identify trends, make informed decisions, and optimize your business processes based on the insights gleaned from your data.`,
     },
   ],
 };

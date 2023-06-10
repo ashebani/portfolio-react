@@ -57,7 +57,7 @@ export const Experience = () => {
             </p>
             <div className="relative">
               <div
-                className={`w-4 h-4 border-2 border-primaryLightBlack  relative aspect-square mt-2 bg-white rounded-full`}
+                className={`w-4 h-4 border-2 border-primaryLightBlack relative aspect-square mt-2 bg-white rounded-full`}
               ></div>
               <div
                 style={{
