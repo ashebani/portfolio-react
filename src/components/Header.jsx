@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Button } from "../utils/Button";
 import Menu from "./Menu";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = React.useState(false);
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <nav className="flex transform fixed justify-between px-20 md:px-8 xs:!px-6 max-w-[1444px] z-20 m-auto py-7 top-0 left-0 right-0 rounded-b-md bg-primaryLightBlack">
+    <nav
+      data-aos="fade-down"
+      className="flex transform fixed justify-between px-20 md:px-8 xs:!px-6 max-w-[1444px] z-20 m-auto py-7 top-0 left-0 right-0 rounded-b-md bg-primaryLightBlack"
+    >
       <div className="flex gap-3 items-center">
         <img
           srcSet={require("../assets/circled-avatar.png")}
@@ -39,6 +47,7 @@ export const Header = () => {
       {/* Mobile NavBar */}
       {showMobileMenu ? (
         <div
+          data-aos="fade-right"
           style={{
             opacity: showMobileMenu ? "1" : "0",
             transition: showMobileMenu
@@ -48,7 +57,10 @@ export const Header = () => {
           }}
           className=" bg-primaryBlack transform fixed top-24 hidden lg:block sm:!left-8 sm:!right-8 lg:left-20 lg:right-20 rounded-2xl p-10 z-10 "
         >
-          <ul className="gap-14 justify-center text-center text-lg font-semibold items-center grid ">
+          <ul
+            data-aos="fade-left"
+            className="gap-14 justify-center text-center text-lg font-semibold items-center grid "
+          >
             <li>
               <a href="#home">Home</a>
             </li>
