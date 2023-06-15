@@ -17,7 +17,7 @@ export const Experience = () => {
         0,
         experience.workHistory.length
       );
-      itemsRef.current.map((item, idx) =>
+      itemsRef.current.forEach((item, idx) =>
         setHeight([...height, item.clientHeight])
       );
     }
@@ -29,6 +29,7 @@ export const Experience = () => {
       window.removeEventListener("scroll", fixedLine);
     };
   }, []);
+  console.log(height);
 
   return (
     <article className=" w-full mt-40 flex gap-20 lg:flex-col ">
@@ -60,13 +61,17 @@ export const Experience = () => {
                 className={`w-4 h-4 border-2 border-primaryLightBlack relative aspect-square mt-2 bg-white rounded-full`}
               ></div>
               <div
+                className="absolute bg-white w-1 left-1/2 -translate-x-1/2"
                 style={{
                   height:
                     index === experience.workHistory.length - 1
-                      ? ""
+                      ? "60px"
                       : `${height[0]}px`,
+                  backgroundColor:
+                    index === experience.workHistory.length - 1
+                      ? "#111111"
+                      : `white`,
                 }}
-                className="absolute bg-white w-1 left-1/2 -translate-x-1/2"
               ></div>
             </div>
             <div>

@@ -39,7 +39,7 @@ export const Projects = () => {
         <div className="">
           <img
             className="rounded-md"
-            srcSet={require("../assets/projectImage.jpg")}
+            srcSet={require("../assets/Untitled-1.png")}
             alt=""
           />
         </div>
