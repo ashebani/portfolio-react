@@ -22,7 +22,10 @@ function App() {
 
   return (
     <>
-      <main className="m-auto px-20 md:px-8 xs:!px-6 max-w-[1444px] overflow-x-hidden">
+      <main
+        id="home"
+        className="m-auto px-20 md:px-8 xs:!px-6 max-w-[1444px] overflow-x-hidden focus:border-none"
+      >
         <Header />
         <Hero />
         <Services />

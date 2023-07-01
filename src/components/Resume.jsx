@@ -6,7 +6,7 @@ export const Resume = () => {
   return (
     <section
       data-aos="flip-up"
-      id="hire-me"
+      id="hireme"
       className="relative bg-primaryBlack py-40 rounded-2xl grid justify-center items-center lg:mt-20 sm:mt-10"
     >
       <div className="flex gap-8 text-center flex-col max-w-4xl m-auto">

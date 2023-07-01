@@ -25,6 +25,17 @@ export const Header = () => {
 
       {/* Desktop NavBar */}
       <ul className="flex gap-10 text-lg font-semibold items-center lg:hidden ">
+        {["Home", "Services", "Projects", "Experience", "Hire Me"].map(
+          (item, idx) => (
+            <li
+              key={idx}
+              className="hover:scale-110 ease-in-out transition duration-200 transform"
+            >
+              <a href={`#${item.toLowerCase().replace(" ", "")}`}>{item}</a>
+            </li>
+          )
+        )}
+        {/*
         <li className="hover:scale-110 ease-in-out transition duration-200 transform">
           <a href="#home">Home</a>
         </li>
@@ -39,7 +50,7 @@ export const Header = () => {
         </li>
         <li className="hover:scale-110 transition duration-200 transform">
           <a href="#hire-me">Hire me</a>
-        </li>
+        </li> */}
       </ul>
 
       <Button text="Contact Me" bgColor="hey" styles={"lg:hidden"} />
@@ -74,7 +85,7 @@ export const Header = () => {
               <a href="#experience">Experience</a>
             </li>
             <li>
-              <a href="#hire-me">Hire me</a>
+              <a href="#hireme">Hire me</a>
             </li>
             <li>
               <Button text="Contact Me" bgColor="hey" styles={" z-20"} />

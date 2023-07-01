@@ -4,9 +4,9 @@ import { hero } from "../utils/data";
 export const Hero = () => {
   return (
     <section
-      data-aos="flip-up"
-      id="home"
-      className=" bg-primaryOrange h-[685px] rounded-2xl grid z-10 justify-center mt-28 items-center relative "
+      // data-aos="flip-up"
+
+      className=" bg-primaryOrange h-[80vh] rounded-2xl grid z-10 justify-center mt-32 items-center relative "
     >
       <div className="flex gap-8 text-center flex-col max-w-4xl m-auto">
         <h1 className="font-semibold text-6xl sm:!text-3xl sm:px-2 lg:text-5xl  ">

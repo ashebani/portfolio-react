@@ -5,11 +5,13 @@ import { aboutMe } from "../utils/data";
 export const AboutMe = () => {
   return (
     <article
-      data-aos="fade-up"
       id="experience"
-      className="flex mt-40 lg:mt-20 gap-20 md:gap-6 lg:flex-col "
+      className="flex mt-40 lg:mt-20 pt-32 gap-20 md:gap-6 lg:flex-col "
     >
-      <div className="flex-1 flex items-center justify-center relative">
+      <div
+        className="flex-1 flex items-center justify-center relative"
+        data-aos="fade-up"
+      >
         <div className="background_image bg-[length:450px] md:bg-[length:350px]">
           <img
             srcSet={require("../assets/5898988-01.png")}
@@ -19,7 +21,7 @@ export const AboutMe = () => {
         </div>
       </div>
 
-      <section className="flex-1 lg:text-center">
+      <section className="flex-1 lg:text-center" data-aos="fade-up">
         <h3 className="text-5xl pb-8 font-semibold sm:text-4xl">
           {aboutMe.title}
         </h3>

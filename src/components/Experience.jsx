@@ -17,7 +17,7 @@ export const Experience = () => {
         0,
         experience.workHistory.length
       );
-      itemsRef.current.forEach((item, idx) =>
+      itemsRef.current.forEach((item) =>
         setHeight([...height, item.clientHeight])
       );
     }
@@ -32,7 +32,7 @@ export const Experience = () => {
   console.log(height);
 
   return (
-    <article className=" w-full mt-40 flex gap-20 lg:flex-col ">
+    <article className="w-full mt-40 flex gap-20 lg:flex-col ">
       <section>
         <div className="flex-1 lg:text-center">
           <h3 className="text-4xl pb-8 font-semibold">{experience.title}</h3>

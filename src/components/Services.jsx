@@ -6,7 +6,7 @@ export const Services = () => {
   return (
     <section
       id="services"
-      className=" services grid grid-cols-2 gap-20 lg:grid-cols-1 lg:gap-10  mt-32"
+      className=" services grid grid-cols-2 gap-20 lg:grid-cols-1 lg:gap-10 mt-20 pt-32"
     >
       <div className="max-w-xl lg:grid lg:m-auto lg:text-center ">
         <h2 className="text-5xl font-semibold sm:text-4xl">{services.title}</h2>
