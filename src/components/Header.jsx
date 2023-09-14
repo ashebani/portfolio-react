@@ -58,18 +58,17 @@ export const Header = () => {
       {/* Mobile NavBar */}
       {showMobileMenu ? (
         <div
-          data-aos="fade-right"
+          data-aos="fade-down"
           style={{
             opacity: showMobileMenu ? "1" : "0",
-            transition: showMobileMenu
-              ? "all .5s ease-in-out"
-              : "transition: transform .5s ease-in-out",
-            transform: showMobileMenu ? "translatex(0)" : "translatex(40px)",
+            transition: "transform .5s ease-in-out",
+            // : "transition: transform .5s ease-in-out",
+            // transform: "translate(40px)",
           }}
           className=" bg-primaryBlack transform fixed top-24 hidden lg:block sm:!left-8 sm:!right-8 lg:left-20 lg:right-20 rounded-2xl p-10 z-10 "
         >
           <ul
-            data-aos="fade-left"
+            data-aos="fade-up"
             className="gap-14 justify-center text-center text-lg font-semibold items-center grid "
           >
             <li>
